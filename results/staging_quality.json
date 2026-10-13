@@ -1,0 +1,7 @@
+{
+  "sample_rows": 5511929,
+  "valid_rows": 5511929,
+  "brand_missing": 792473,
+  "category_missing": 1755280,
+  "seconds": 31.61223764999886
+}

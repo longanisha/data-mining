@@ -1,0 +1,90 @@
+{
+  "splits": {
+    "train": {
+      "n": 170882,
+      "frauds": 360,
+      "min_elapsed": 0.0,
+      "max_elapsed": 120395.0
+    },
+    "validation": {
+      "n": 56963,
+      "frauds": 57,
+      "min_elapsed": 120396.0,
+      "max_elapsed": 145247.0
+    },
+    "test": {
+      "n": 56962,
+      "frauds": 75,
+      "min_elapsed": 145248.0,
+      "max_elapsed": 172792.0
+    }
+  },
+  "cutoffs": [
+    120396.0,
+    145247.80000000002
+  ],
+  "features": "V1..V28 plus log1p(Amount); Time only for temporal split; Class excluded from X",
+  "metrics": [
+    {
+      "model": "isolation_forest",
+      "threshold_validation_max_f1": 0.5891085252827847,
+      "test_average_precision": 0.047692903440322044,
+      "test_roc_auc": 0.9517813677407257,
+      "test_precision": 0.06923076923076923,
+      "test_recall": 0.36,
+      "test_f1": 0.11612903225806452,
+      "confusion_tn_fp_fn_tp": [
+        56524,
+        363,
+        48,
+        27
+      ]
+    },
+    {
+      "model": "logistic_regression",
+      "threshold_validation_max_f1": 0.9999850144642701,
+      "test_average_precision": 0.7471987153892378,
+      "test_roc_auc": 0.9817868171404129,
+      "test_precision": 0.9607843137254902,
+      "test_recall": 0.6533333333333333,
+      "test_f1": 0.7777777777777778,
+      "confusion_tn_fp_fn_tp": [
+        56885,
+        2,
+        26,
+        49
+      ]
+    },
+    {
+      "model": "random_forest",
+      "threshold_validation_max_f1": 0.3694346367585675,
+      "test_average_precision": 0.8122414794513096,
+      "test_roc_auc": 0.9610096038345023,
+      "test_precision": 0.890625,
+      "test_recall": 0.76,
+      "test_f1": 0.8201438848920863,
+      "confusion_tn_fp_fn_tp": [
+        56880,
+        7,
+        18,
+        57
+      ]
+    },
+    {
+      "model": "amount_baseline",
+      "threshold_validation_max_f1": 667.55,
+      "test_average_precision": 0.0014479842074899473,
+      "test_roc_auc": 0.38202881736307653,
+      "test_precision": 0.002926829268292683,
+      "test_recall": 0.04,
+      "test_f1": 0.005454545454545455,
+      "confusion_tn_fp_fn_tp": [
+        55865,
+        1022,
+        72,
+        3
+      ]
+    }
+  ],
+  "seconds_total_mining": 46.6875606829999
+}

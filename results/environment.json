@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "logical_cpus": 9,
+  "memory_gib": 9.733684539794922,
+  "duckdb_threads": 2,
+  "duckdb_benchmark_memory": "2GB",
+  "spark_master": "local[2]",
+  "seed": 544
+}

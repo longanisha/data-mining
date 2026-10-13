@@ -1,0 +1,11 @@
+{
+  "exact_observed_repeat_rows": 4063,
+  "zero_price_events": 9015,
+  "source_sessions": 1201148,
+  "scd_changed_products": 2450,
+  "card_null_cells": 0,
+  "card_negative_amount": 0,
+  "card_zero_amount": 1825,
+  "card_feature_duplicate_rows": 1081,
+  "mining_nonfinite": 0
+}

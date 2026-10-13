@@ -1,0 +1,134 @@
+WAREHOUSE GRAINS:
+ source_key                name                      grain  labels_available
+          1 REES46 October 2019 observed clickstream event             False
+          2       ULB Worldline           card transaction              True
+
+VALIDATION:
+{
+  "event_count": 5511929,
+  "card_count": 284807,
+  "fraud_count": 492,
+  "session_count": 1225832,
+  "product_versions": 128525,
+  "products": 126005,
+  "orphan_product": 0,
+  "orphan_session": 0,
+  "duplicate_event_ids": 0,
+  "invalid_scd_assignment": 0,
+  "current_version_errors": 0,
+  "repeated_same_second": 4047,
+  "database_build_seconds": 60.47495244500169
+}
+
+SCD HISTORY EXAMPLE:
+ product_id  product_version        effective_ts           expiry_ts  is_current
+    1000978                1 2019-10-21 06:37:11 2019-10-21 11:36:42       False
+    1000978                2 2019-10-21 11:36:42                 NaT        True
+
+CARD BASELINES:
+[
+  {
+    "model": "isolation_forest",
+    "threshold_validation_max_f1": 0.5891085252827847,
+    "test_average_precision": 0.047692903440322044,
+    "test_roc_auc": 0.9517813677407257,
+    "test_precision": 0.06923076923076923,
+    "test_recall": 0.36,
+    "test_f1": 0.11612903225806452,
+    "confusion_tn_fp_fn_tp": [
+      56524,
+      363,
+      48,
+      27
+    ]
+  },
+  {
+    "model": "logistic_regression",
+    "threshold_validation_max_f1": 0.9999850144642701,
+    "test_average_precision": 0.7471987153892378,
+    "test_roc_auc": 0.9817868171404129,
+    "test_precision": 0.9607843137254902,
+    "test_recall": 0.6533333333333333,
+    "test_f1": 0.7777777777777778,
+    "confusion_tn_fp_fn_tp": [
+      56885,
+      2,
+      26,
+      49
+    ]
+  },
+  {
+    "model": "random_forest",
+    "threshold_validation_max_f1": 0.3694346367585675,
+    "test_average_precision": 0.8122414794513096,
+    "test_roc_auc": 0.9610096038345023,
+    "test_precision": 0.890625,
+    "test_recall": 0.76,
+    "test_f1": 0.8201438848920863,
+    "confusion_tn_fp_fn_tp": [
+      56880,
+      7,
+      18,
+      57
+    ]
+  },
+  {
+    "model": "amount_baseline",
+    "threshold_validation_max_f1": 667.55,
+    "test_average_precision": 0.0014479842074899473,
+    "test_roc_auc": 0.38202881736307653,
+    "test_precision": 0.002926829268292683,
+    "test_recall": 0.04,
+    "test_f1": 0.005454545454545455,
+    "confusion_tn_fp_fn_tp": [
+      55865,
+      1022,
+      72,
+      3
+    ]
+  }
+]
+WAREHOUSE GRAINS:
+ source_key                name                      grain  labels_available
+          1 REES46 October 2019 observed clickstream event             False
+          2       ULB Worldline           card transaction              True
+
+VALIDATION:
+{
+  "event_count": 5511929,
+  "card_count": 284807,
+  "fraud_count": 492,
+  "session_count": 1225832,
+  "product_versions": 128525,
+  "products": 126005,
+  "orphan_product": 0,
+  "orphan_session": 0,
+  "duplicate_event_ids": 0,
+  "invalid_scd_assignment": 0,
+  "current_version_errors": 0,
+  "repeated_same_second": 4047,
+  "database_build_seconds": 60.47495244500169
+}
+
+q4_product_rank.sql
+ iso_week   category_code brand_name  product_id  purchase_events  purchase_event_value  category_rank
+       43         Unknown     xiaomi     5100816              180               5091.28              1
+       43         Unknown   cordiant    12703015               62               2683.66              2
+       43         Unknown       sony     4100346               42              16559.96              3
+       43         Unknown   cordiant    12703498               39               1580.79              4
+       43         Unknown   cordiant    12703494               27               1115.97              5
+       43 accessories.bag     sumdex    18300141                4                 66.92              1
+       43 accessories.bag   portcase    18300021                3                 27.81              2
+       43 accessories.bag  continent    18300119                3                 49.73              2
+       43 accessories.bag      crown    18300177                2                 18.02              3
+       43 accessories.bag    stanley    52900147                2                 23.54              3
+       43 accessories.bag    cameron    18300005                1                 14.59              4
+       43 accessories.bag   rivacase    18300025                1                 22.91              4
+       43 accessories.bag       acer    18300145                1                 12.07              4
+       43 accessories.bag         hp    18300214                1                 18.25              4
+       43 accessories.bag     xiaomi    18300229                1                 41.19              4
+       43 accessories.bag     xiaomi    18300370                1                 35.78              4
+       43 accessories.bag     xiaomi    18300589                1                  9.01              4
+       43 accessories.bag     xiaomi    18300604                1                 11.94              4
+       43 accessories.bag     xiaomi    18300607                1                  9.78              4
+       43 accessories.bag     lenovo    18300768                1                 20.57              4

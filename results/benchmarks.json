@@ -1,0 +1,212 @@
+[
+  {
+    "query": "q1_category_rollup",
+    "strategy": "native",
+    "median_seconds": 0.15760858599969652,
+    "min_seconds": 0.1488130360012292,
+    "max_seconds": 0.1656874050022452,
+    "runs": [
+      0.15760858599969652,
+      0.1488130360012292,
+      0.1656874050022452
+    ],
+    "rows": 76,
+    "result_sha256": "c8d1c84e94a05f657b7f5a9d4b8e507b10246a846006d1287f64c90d90c98f1b"
+  },
+  {
+    "query": "q2_hourly_funnel",
+    "strategy": "native",
+    "median_seconds": 0.059537289998843335,
+    "min_seconds": 0.05848201100161532,
+    "max_seconds": 0.06353496700103278,
+    "runs": [
+      0.06353496700103278,
+      0.059537289998843335,
+      0.05848201100161532
+    ],
+    "rows": 302,
+    "result_sha256": "178c03c5f3e59da0d914d0dbfb5297ecec9a3687ff430ea47a8416f3859349e8"
+  },
+  {
+    "query": "q3_daily_trend",
+    "strategy": "native",
+    "median_seconds": 0.10642276400176343,
+    "min_seconds": 0.09919111500130384,
+    "max_seconds": 0.11245619699911913,
+    "runs": [
+      0.11245619699911913,
+      0.10642276400176343,
+      0.09919111500130384
+    ],
+    "rows": 434,
+    "result_sha256": "1d33332fdd52be637fce2b4fe10d1c919dfb3a571f0d589fe0058a7a299da5c2"
+  },
+  {
+    "query": "q4_product_rank",
+    "strategy": "native",
+    "median_seconds": 0.03932809000252746,
+    "min_seconds": 0.03205666299982113,
+    "max_seconds": 0.04266128200106323,
+    "runs": [
+      0.03932809000252746,
+      0.04266128200106323,
+      0.03205666299982113
+    ],
+    "rows": 1408,
+    "result_sha256": "045e66c3523c5c1a2784fc785c909e56485cf917bb706948eedcb07cdc6b9f14"
+  },
+  {
+    "query": "q5_session_rank",
+    "strategy": "native",
+    "median_seconds": 0.05966942500162986,
+    "min_seconds": 0.058126347001234535,
+    "max_seconds": 0.06909957899915753,
+    "runs": [
+      0.058126347001234535,
+      0.05966942500162986,
+      0.06909957899915753
+    ],
+    "rows": 100,
+    "result_sha256": "a069fe4c27a8e05f393fc78aaa3b42dfaee6cbaeb8d953da23e4767a3103a937"
+  },
+  {
+    "query": "q1_category_rollup",
+    "strategy": "secondary_indexes",
+    "median_seconds": 0.18556901299962192,
+    "min_seconds": 0.1587852809971082,
+    "max_seconds": 0.18809409999812488,
+    "runs": [
+      0.18809409999812488,
+      0.1587852809971082,
+      0.18556901299962192
+    ],
+    "rows": 76,
+    "result_sha256": "c8d1c84e94a05f657b7f5a9d4b8e507b10246a846006d1287f64c90d90c98f1b"
+  },
+  {
+    "query": "q2_hourly_funnel",
+    "strategy": "secondary_indexes",
+    "median_seconds": 0.058847956999670714,
+    "min_seconds": 0.05557690000205184,
+    "max_seconds": 0.06449081499886233,
+    "runs": [
+      0.058847956999670714,
+      0.06449081499886233,
+      0.05557690000205184
+    ],
+    "rows": 302,
+    "result_sha256": "178c03c5f3e59da0d914d0dbfb5297ecec9a3687ff430ea47a8416f3859349e8"
+  },
+  {
+    "query": "q3_daily_trend",
+    "strategy": "secondary_indexes",
+    "median_seconds": 0.1396088370020152,
+    "min_seconds": 0.13126352800099994,
+    "max_seconds": 0.15180020199841238,
+    "runs": [
+      0.13126352800099994,
+      0.15180020199841238,
+      0.1396088370020152
+    ],
+    "rows": 434,
+    "result_sha256": "1d33332fdd52be637fce2b4fe10d1c919dfb3a571f0d589fe0058a7a299da5c2"
+  },
+  {
+    "query": "q4_product_rank",
+    "strategy": "secondary_indexes",
+    "median_seconds": 0.04601909299890394,
+    "min_seconds": 0.03867846899811411,
+    "max_seconds": 0.04804722200060496,
+    "runs": [
+      0.04601909299890394,
+      0.04804722200060496,
+      0.03867846899811411
+    ],
+    "rows": 1408,
+    "result_sha256": "045e66c3523c5c1a2784fc785c909e56485cf917bb706948eedcb07cdc6b9f14"
+  },
+  {
+    "query": "q5_session_rank",
+    "strategy": "secondary_indexes",
+    "median_seconds": 0.08559244600110105,
+    "min_seconds": 0.06788715599759598,
+    "max_seconds": 0.0891865899975528,
+    "runs": [
+      0.0891865899975528,
+      0.06788715599759598,
+      0.08559244600110105
+    ],
+    "rows": 100,
+    "result_sha256": "a069fe4c27a8e05f393fc78aaa3b42dfaee6cbaeb8d953da23e4767a3103a937"
+  },
+  {
+    "query": "q1_category_rollup",
+    "strategy": "date_partitioned_parquet",
+    "median_seconds": 0.5678126149978198,
+    "min_seconds": 0.5522959970003285,
+    "max_seconds": 0.5725364190002438,
+    "runs": [
+      0.5725364190002438,
+      0.5522959970003285,
+      0.5678126149978198
+    ],
+    "rows": 76,
+    "result_sha256": "c8d1c84e94a05f657b7f5a9d4b8e507b10246a846006d1287f64c90d90c98f1b"
+  },
+  {
+    "query": "q2_hourly_funnel",
+    "strategy": "date_partitioned_parquet",
+    "median_seconds": 0.05672980599774746,
+    "min_seconds": 0.04842871499931789,
+    "max_seconds": 0.06182193799759261,
+    "runs": [
+      0.06182193799759261,
+      0.04842871499931789,
+      0.05672980599774746
+    ],
+    "rows": 302,
+    "result_sha256": "178c03c5f3e59da0d914d0dbfb5297ecec9a3687ff430ea47a8416f3859349e8"
+  },
+  {
+    "query": "q3_daily_trend",
+    "strategy": "date_partitioned_parquet",
+    "median_seconds": 0.2731323180014442,
+    "min_seconds": 0.25385825899866177,
+    "max_seconds": 0.31501944300180185,
+    "runs": [
+      0.2731323180014442,
+      0.25385825899866177,
+      0.31501944300180185
+    ],
+    "rows": 434,
+    "result_sha256": "1d33332fdd52be637fce2b4fe10d1c919dfb3a571f0d589fe0058a7a299da5c2"
+  },
+  {
+    "query": "q4_product_rank",
+    "strategy": "date_partitioned_parquet",
+    "median_seconds": 0.035455569999612635,
+    "min_seconds": 0.035301251999044325,
+    "max_seconds": 0.035760550999839325,
+    "runs": [
+      0.035760550999839325,
+      0.035301251999044325,
+      0.035455569999612635
+    ],
+    "rows": 1408,
+    "result_sha256": "045e66c3523c5c1a2784fc785c909e56485cf917bb706948eedcb07cdc6b9f14"
+  },
+  {
+    "query": "q5_session_rank",
+    "strategy": "date_partitioned_parquet",
+    "median_seconds": 0.0401119159978407,
+    "min_seconds": 0.03950181499749306,
+    "max_seconds": 0.04647777200079872,
+    "runs": [
+      0.04647777200079872,
+      0.03950181499749306,
+      0.0401119159978407
+    ],
+    "rows": 100,
+    "result_sha256": "a069fe4c27a8e05f393fc78aaa3b42dfaee6cbaeb8d953da23e4767a3103a937"
+  }
+]

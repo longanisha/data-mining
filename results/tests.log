@@ -1,0 +1,9 @@
+test_exact_inactivity_boundary (test_contracts.BoundaryContracts.test_exact_inactivity_boundary) ... ok
+test_query_result_parity (test_contracts.BoundaryContracts.test_query_result_parity) ... ok
+test_scd_same_timestamp_tiebreak (test_contracts.BoundaryContracts.test_scd_same_timestamp_tiebreak) ... ok
+test_warehouse_and_model_contracts (test_contracts.BoundaryContracts.test_warehouse_and_model_contracts) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.027s
+
+OK

@@ -1,0 +1,15 @@
+{
+  "event_count": 5511929,
+  "card_count": 284807,
+  "fraud_count": 492,
+  "session_count": 1225832,
+  "product_versions": 128525,
+  "products": 126005,
+  "orphan_product": 0,
+  "orphan_session": 0,
+  "duplicate_event_ids": 0,
+  "invalid_scd_assignment": 0,
+  "current_version_errors": 0,
+  "repeated_same_second": 4047,
+  "database_build_seconds": 60.47495244500169
+}

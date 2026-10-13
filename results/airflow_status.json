@@ -1,0 +1,60 @@
+{
+  "dag_runs": [
+    {
+      "run_id": "manual__2026-10-12T09:22:04.704288+00:00",
+      "state": "success",
+      "start_date": "2026-10-12 09:22:04.704288",
+      "end_date": "2026-10-12 09:26:42.151482"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "extract",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-12 09:23:59.230081",
+      "duration": null,
+      "try_number": 1
+    },
+    {
+      "task_id": "spark_staging",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-12 09:24:31.294687",
+      "duration": null,
+      "try_number": 1
+    },
+    {
+      "task_id": "warehouse_validate",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-12 09:25:32.281873",
+      "duration": null,
+      "try_number": 1
+    },
+    {
+      "task_id": "feature_mart",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-12 09:25:36.615670",
+      "duration": null,
+      "try_number": 1
+    },
+    {
+      "task_id": "olap_benchmarks",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-12 09:25:54.025466",
+      "duration": null,
+      "try_number": 1
+    },
+    {
+      "task_id": "mining",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-12 09:26:42.144596",
+      "duration": null,
+      "try_number": 1
+    }
+  ]
+}
